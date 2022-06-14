@@ -25,12 +25,14 @@ export default StyleSheet.create({
         flex:1,
         fontSize:22,
         color:"black",
-        marginBottom:15
+        marginBottom:15,
+        fontStyle:"italic"
     },
     episode:{
         fontSize:21,
         color:"black",
-        marginBottom:15
+        marginBottom:15,
+        fontStyle:"italic"
     },
     date:{
         fontSize:21,

@@ -13,9 +13,21 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen component={HomePage} name={'HomeScreen'} options={{headerStyle:{backgroundColor:"#69C8EC99"}}}/>
-        <Stack.Screen component={ChapterDetail} name={'ChapterDetailScreen'} />
-        <Stack.Screen component={CharacterDetail} name={'CharacterDetailScreen'}/>
+        <Stack.Screen
+          component={HomePage}
+          name={'HomeScreen'}
+          options={{headerStyle: {backgroundColor: '#69C8EC99'},headerTitle:"Home",headerTitleAlign:"center",headerTitleStyle:{color:"black"}}}
+        />
+        <Stack.Screen
+          component={ChapterDetail}
+          name={'ChapterDetailScreen'}
+          options={{headerStyle: {backgroundColor: '#69C8EC99'},headerTitle:"Chapter Detail",headerTitleAlign:"center",headerTitleStyle:{color:"black"}}}
+        />
+        <Stack.Screen
+          component={CharacterDetail}
+          name={'CharacterDetailScreen'}
+          options={{headerStyle: {backgroundColor: '#69C8EC99'},headerTitle:"Character Detail",headerTitleAlign:"center",headerTitleStyle:{color:"black"}}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
