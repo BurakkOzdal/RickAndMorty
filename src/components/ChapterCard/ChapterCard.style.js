@@ -1,0 +1,41 @@
+import { StyleSheet } from "react-native";
+
+export default StyleSheet.create({
+    container:{
+        margin:10,
+        padding:10,
+        backgroundColor:"#E8924299",
+        borderRadius:10,
+    },
+    inner_container:{
+        flex:1,
+        alignItems:"center"
+    },
+    top_container:{
+        alignItems:"center"
+    },
+    img:{
+        width:250,
+        height:250,
+        resizeMode:"contain",
+        alignSelf:"center",
+        marginVertical:20
+    },
+    name:{
+        flex:1,
+        fontSize:22,
+        color:"black",
+        marginBottom:15
+    },
+    episode:{
+        fontSize:21,
+        color:"black",
+        marginBottom:15
+    },
+    date:{
+        fontSize:21,
+        fontStyle:"italic",
+        color:"black",
+        marginBottom:15
+    }
+})
