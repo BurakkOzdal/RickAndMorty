@@ -5,7 +5,8 @@ import styles from './CharacterCard.style';
 
 function CharacterCard({item, navigation}) {
   const {data, error, loading} = useFetch(item);
-
+  
+ 
   function handleCharacter() {
     navigation.navigate('CharacterDetailScreen', {characterId: data.id});
   }

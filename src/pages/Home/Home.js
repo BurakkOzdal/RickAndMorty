@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, SafeAreaView, Text, View } from 'react-native'
+import { FlatList, SafeAreaView} from 'react-native'
 import Loading from "../../components/Loading"
 import Error from "../../components/Error"
 import ChapterCard from "../../components/ChapterCard"
@@ -18,7 +18,6 @@ function Home({navigation}) {
     }
 
     function renderResult({item}) {
-        console.log(item.episode)
         return <ChapterCard data={item} navigation={navigation}/>
     }
 

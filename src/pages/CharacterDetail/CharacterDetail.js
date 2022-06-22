@@ -1,6 +1,8 @@
 import React from 'react';
 import {Image, SafeAreaView, ScrollView, Text, View} from 'react-native';
 import useFetch from '../../hooks/useFetch';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
 import styles from './CharacterDetail.style';
 
 function CharacterDetail({route}) {
@@ -8,7 +10,16 @@ function CharacterDetail({route}) {
   const {data, error, loading} = useFetch(
     `https://rickandmortyapi.com/api/character/${characterId}`,
   );
-  console.log(data);
+
+  if (error) {
+    console.log(error)
+    return <Error/>
+  }
+
+  if (loading) {
+  return <Loading/>
+  }
+  
 
   return (
     <SafeAreaView style={styles.container}>

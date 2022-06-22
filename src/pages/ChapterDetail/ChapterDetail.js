@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {FlatList, Image, SafeAreaView, Text, View} from 'react-native';
+import React from 'react';
+import {FlatList, SafeAreaView, Text, View} from 'react-native';
 import Loading from '../../components/Loading/Loading';
 import Error from '../../components/Error';
 import CharacterCard from '../../components/CharacterCard';
