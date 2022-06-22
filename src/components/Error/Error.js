@@ -1,8 +1,9 @@
-import AnimatedLottieView from "lottie-react-native";
+import LottieView from "lottie-react-native";
+import React from "react";
 
 const Error=()=>{
     return(
-        <AnimatedLottieView source={require("../../assets/error.json")} autoPlay/>
+        <LottieView source={require('../../assets/error.json')} autoPlay/>
     )
 }
 

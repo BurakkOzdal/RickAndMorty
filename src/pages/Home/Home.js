@@ -1,6 +1,6 @@
 import React from 'react'
 import { FlatList, SafeAreaView, Text, View } from 'react-native'
-import Loading from "../../components/Loading/Loading"
+import Loading from "../../components/Loading"
 import Error from "../../components/Error"
 import ChapterCard from "../../components/ChapterCard"
 import useFetch from '../../hooks/useFetch'
@@ -8,17 +8,17 @@ import styles from "./Home.style"
 
 function Home({navigation}) {
     const{data, error, loading}=useFetch('https://rickandmortyapi.com/api/episode')
-   
-
     if (loading) {
-        <Loading/>
+       return <Loading/>
     }
     if (error) {
-        <Error/>
         console.log(error)
+        return <Error/>
+         
     }
 
     function renderResult({item}) {
+        console.log(item.episode)
         return <ChapterCard data={item} navigation={navigation}/>
     }
 

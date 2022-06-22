@@ -13,11 +13,11 @@ function ChapterDetail({route, navigation}) {
   );
 
   if (loading) {
-    <Loading />;
+   return <Loading />;
   }
   if (error) {
-    <Error />;
     console.log(error);
+   return <Error />;
   }
 
   function renderCharacter({item}) {
